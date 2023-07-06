@@ -5,15 +5,25 @@ let arrAdjective = ["cute", "fierce", "graceful", "majestic", "playful", "agile"
 
 function randItem (array) {
     let top = array.length;
-    return array[Math.floor(Math.random() * top)]
+    return array[Math.floor(Math.random() * top)].toLowerCase();
 }
 
-let adjective1 = randItem(arrAdjective);
-let animal1 = randItem(arrAnimals);
-let verb1 = randItem(arrVerbs);
-let verb2 = arrPastVerbs[arrVerbs.indexOf(verb1)].toLowerCase();
-let adjective2 = randItem(arrAdjective);
-let animal2 = randItem(arrAnimals);
+let generatePhrase=()=>{
+    let adjective1 = randItem(arrAdjective);
+    let animal1 = randItem(arrAnimals);
+    let verb1 = randItem(arrVerbs);
+    let verb2 = arrPastVerbs[arrVerbs.indexOf(verb1)].toLowerCase();
+    let adjective2 = randItem(arrAdjective);
+    let animal2 = randItem(arrAnimals);
 
-console.log(`The ${adjective1} ${animal1} ${verb1} at the ${adjective2} ${animal2}. The ${adjective1} ${animal1} ${verb2}.`);
+    return `The ${adjective1} ${animal1} ${verb1} at the ${adjective2} ${animal2}. The ${adjective1} ${animal1} ${verb2}.`;
+}
+
+function buttonPush(){
+    
+    document.getElementById("phrase").innerHTML = generatePhrase();
+    
+    }
+    
+    document.getElementById("btnPhrase").addEventListener('click',buttonPush)
 
