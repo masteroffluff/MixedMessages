@@ -1,0 +1,36 @@
+body {
+        /* put everything in a center column */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+}
+
+main{
+    width:1000px;
+    flex-direction: column;
+}
+
+
+#btnPhrase {
+    border:grey 1px solid;
+    display:block;
+    max-width: 200px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+#btnPhrase:active{
+    box-shadow: none;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#phrase {
+    padding-top:0;
+}
