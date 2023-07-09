@@ -15,14 +15,15 @@ header {
     position:relative;
     display:flex;
  
-    padding: 20px 40px 50px 70px;
+    padding: 40px;
     height: 300px;
     width: fit-content;
     min-width: 700px;
    
     justify-items: center;
     align-items: center;
-   
+    text-align: center;
+
     background-color: chartreuse;
     box-shadow: 5px 5px 3px grey;
     border-radius: 165px;
