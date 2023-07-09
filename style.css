@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+html {
+  
+}
+
 header {
     display: flex;
     align-content: center;
@@ -9,18 +13,18 @@ header {
 
 #message {
     position:relative;
-
-    display: flex;
+    display:flex;
  
-    padding: 20px;
+    padding: 20px 40px 50px 70px;
     height: 300px;
     width: fit-content;
-
+    min-width: 700px;
+   
     justify-items: center;
     align-items: center;
-
+   
     background-color: chartreuse;
-    box-shadow: 3px 3px 3px red;
+    box-shadow: 5px 5px 3px grey;
     border-radius: 165px;
     font-family: 'Pacifico';
     font-size: 48px;

@@ -16,5 +16,5 @@ const generate = () => {
     let adjective2 = randItem(arrAdjective);
     let animal2 = randItem(arrAnimals);
 
-document.getElementById('message').innerHTML = `The ${adjective1} ${animal1} ${verb1} at the ${adjective2} ${animal2}. The ${adjective1} ${animal1} ${verb2}.`;
+document.getElementById('message').innerHTML = `<CR>The ${adjective1} ${animal1} ${verb1} at the ${adjective2} ${animal2}. The ${adjective1} ${animal1} ${verb2}.</CR>`;
 }
