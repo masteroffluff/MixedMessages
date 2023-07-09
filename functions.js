@@ -8,14 +8,14 @@ document.addEventListener('readystatechange', event => {
 
         button.addEventListener('click', generate);
 
-        let change=2;
+        let change=5;
         let shadow=1;
 
         setInterval(function () 
             {    
-            button.style.backgroundColor = "rgb("+shadow+", 105, 100)";
+            button.style.backgroundColor = "rgb("+shadow+", 0, 0)";
             shadow+=change;
-            if ((shadow > 155) || (shadow < 1)) {change=-change}
+            if ((shadow > 255) || (shadow < 1)) {change=-change}
         },0.5);
 
     }

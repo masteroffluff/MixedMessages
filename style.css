@@ -13,13 +13,15 @@ header {
     display: flex;
  
     padding: 20px;
-    height: 100px;
+    height: 300px;
     width: fit-content;
 
     justify-items: center;
     align-items: center;
 
     background-color: chartreuse;
+    box-shadow: 3px 3px 3px red;
+    border-radius: 165px;
     font-family: 'Pacifico';
     font-size: 48px;
 }
